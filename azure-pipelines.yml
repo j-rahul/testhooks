@@ -10,8 +10,7 @@ resources:
     endpoint: 'GitHub connection 2'
 trigger:  none
 
-pool:
-  vmImage: 'ubuntu-latest'
+pool: 'default'
 
 steps:
 - script: echo Hello, world!
