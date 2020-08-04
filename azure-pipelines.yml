@@ -3,6 +3,12 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+resources:
+  repositories:
+  - repository: pipelinestest
+    type: github
+    name: 'j-rahul/pipelines-test'
+    endpoint: 'GitHub connection 2'
 trigger:  none
 
 pool: 'default'
