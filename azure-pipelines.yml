@@ -8,7 +8,6 @@ resources:
     type: github
     name: 'j-rahul/pipelines-test'
     endpoint: 'GitHub connection 2'
-    ref: refs/tags/v1.0.20200730.3
 trigger:  none
 
 pool:
