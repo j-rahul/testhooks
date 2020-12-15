@@ -11,7 +11,7 @@ trigger:
     - releases/*
   paths:
     include:
-    - docs/foo*
+    - 'docs/foo*'
     exclude:
     - docs/README.md
 
