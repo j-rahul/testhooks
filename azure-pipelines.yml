@@ -3,6 +3,15 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+schedules:
+- cron: "45 21 1-7 * 4"
+  displayName: The first thursdau of every month at 21:45 UTC
+  branches:
+    include:
+    - main
+    - releases/*
+  always: true
+
 # specific path build
 trigger:
   branches:
