@@ -5,10 +5,17 @@
 
 schedules:
 - cron: "0 0 * * *"
-  displayName: The first thursdau of every month at 21:45 UTC
+  displayName: Daily midnight build
   branches:
     include:
     - main
+    - releases/*
+    exclude:
+    - releases/ancient/*
+- cron: "0 12 * * 0"
+  displayName: Weekly Sunday build
+  branches:
+    include:
     - releases/*
   always: true
 
