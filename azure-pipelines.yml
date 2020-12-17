@@ -12,18 +12,6 @@ schedules:
     - releases/*
   always: true
 
-# specific path build
-trigger:
-  branches:
-    include:
-    - master
-    - releases/*
-  paths:
-    include:
-    - 'docs/foo*'
-    exclude:
-    - docs/README.md
-
 pool: 
  vmImage: ubuntu-latest
 
