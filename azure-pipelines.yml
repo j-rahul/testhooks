@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 schedules:
-- cron: "45 21 1-7 * 4"
+- cron: "0 0 * * *"
   displayName: The first thursdau of every month at 21:45 UTC
   branches:
     include:
